@@ -33,6 +33,7 @@ public class Categoria implements Serializable {
 	
 	}
 
+
 	public Categoria(Integer id, String nome, String descriçao) {
 		super();
 		this.id = id;
@@ -40,29 +41,52 @@ public class Categoria implements Serializable {
 		this.descriçao = descriçao;
 	}
 
+
+
 	public Integer getId() {
 		return id;
 	}
+
 
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
+
 	public String getNome() {
 		return nome;
 	}
+
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
+
 	public String getDescriçao() {
 		return descriçao;
 	}
 
+
 	public void setDescriçao(String descriçao) {
 		this.descriçao = descriçao;
 	}
+
+
+	public List<Livro> getLivros() {
+		return livros;
+	}
+
+
+	public void setLivros(List<Livro> livros) {
+		this.livros = livros;
+	}
+
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 
 	@Override
 	public int hashCode() {
