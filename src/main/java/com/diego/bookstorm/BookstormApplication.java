@@ -6,10 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
 import com.diego.bookstorm.domain.Categoria;
 import com.diego.bookstorm.domain.Livro;
 import com.diego.bookstorm.repositores.CategoriaRepository;
 import com.diego.bookstorm.repositores.LivroRepository;
+
+
 
 @SpringBootApplication
 public class BookstormApplication {
